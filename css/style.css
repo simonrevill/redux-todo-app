@@ -1,0 +1,52 @@
+.redux-logo {
+  height: 50px;
+  width: auto;
+  margin-right: 5px;
+}
+
+.todo-text--complete {
+  color: #28a745;
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.todo-controls {
+  width: 75px;
+}
+
+.todo-controls__check,
+.todo-controls__checked {
+  margin-top: 2px;
+}
+
+.todo-controls__check,
+.todo-controls__checked,
+.todo-controls__delete {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 200ms;
+}
+
+.todo-controls__check {
+  color: #007bff;
+}
+
+.todo-controls__checked {
+  color: #28a745;
+}
+
+.todo-controls__delete {
+  color: #dc3545;
+}
+
+.todo-controls__check:hover {
+  color: #3395ff;
+}
+
+.todo-controls__checked:hover {
+  color: #53b96a;
+}
+
+.todo-controls__delete:hover {
+  color: #e35d6a;
+}

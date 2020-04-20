@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/libraries/bootstrap.4.4.1.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Redux To-Do App</title>
+</head>
+
+<body>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex align-items-center">
+          <img src="https://redux.js.org/img/redux.svg" class="redux-logo" alt="Redux Logo">
+          <h1 class="h3 mb-0">Redux To-Do App</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="input-group my-3">
+          <input type="text" class="form-control" placeholder="Enter a todo..." aria-label="Enter a todo..."
+            aria-describedby="basic-addon">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary js-add-todo" type="button">Add Todo</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-3">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="h5">Filters</h2>
+      </div>
+    </div>
+    <div class="mt-2 w-100">
+      <div class="row">
+        <div class="col-12">
+          <div class="btn-group w-100 js-filter-group">
+            <button class="js-filter-btn btn btn-primary" type="button" data-filter="All">All</button>
+            <button class="js-filter-btn btn btn-outline-primary" type="button"
+              data-filter="Incomplete">Incomplete</button>
+            <button class="js-filter-btn btn btn-outline-primary" type="button"
+              data-filter="Completed">Completed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <ul class="list-group mt-4 js-todo-list"></ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-primary mt-4 w-50 js-clear-btn d-none" type="button">Clear Todos</button>
+      </div>
+    </div>
+    <hr class="mt-3">
+  </div>
+  <!-- Scripts -->
+  <script src="./js/libraries/jQuery.3.4.1.min.js" type="text/javascript"></script>
+  <script src="./js/libraries/bootstrap.4.4.0.min.js" type="text/javascript"></script>
+  <script src="./js/libraries/uuidv4.min.js" type="text/javascript"></script>
+  <script src="./js/libraries/redux.4.0.5.min.js" type="text/javascript"></script>
+  <script src="./js/app.js" type="module"></script>
+</body>
+
+</html>
