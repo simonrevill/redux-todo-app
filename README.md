@@ -1,4 +1,4 @@
-![Redux Logo] (/img/redux_logo.png)
+![Redux Logo] (https://github.com/simonrevill/redux-todo-app/blob/develop/img/redux_logo.png)
 # Redux To-do App
 
 A basic To-do app using vanilla JS and Redux.
