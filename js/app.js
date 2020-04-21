@@ -154,20 +154,7 @@ Utilities.addListener(input, 'keyup', e => e.keyCode === 13 ? addTodoItem() : nu
 // clearTodos: ---------------- //
 // store.dispatch(clearTodos());
 
-const render = () => {
-  const currentState = store.getState();
-  var testArea = Utilities.select('.test-area');
-
-  const listItems = currentState.todoReducer.todos;
-  if (testArea.innerHTML) {
-    Utilities.clearHtml(testArea);
-  }
-  listItems.map(item => {
-    const li = document.createElement('li');
-    li.innerText = `${item.text}`;
-    testArea.appendChild(li);
-  });
-};
+const render = () => { };
 
 store.subscribe(render);
 
