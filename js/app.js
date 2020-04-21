@@ -136,52 +136,23 @@ Utilities.addListener(input, 'keyup', e => e.keyCode === 13 ? addTodoItem() : nu
 
 // -------- REDUX -------- //
 
-// Test Dispatch Actions to Redux Store:
+// Example Dispatch Actions to Redux Store:
 
 // addTodoItem ---------------- //:
-
-store.dispatch(addTodo(1, 'Go shopping'));
-store.dispatch(addTodo(2, 'Walk the dog'));
-store.dispatch(addTodo(3, 'Wash the car'));
-store.dispatch(addTodo(4, 'Do the dishes'));
-
-console.log('added 4 new todos. state: ', store.getState());
+// store.dispatch(addTodo(1, 'Go shopping'));
+// store.dispatch(addTodo(2, 'Walk the dog'));
 
 // toggleCompleted: ---------------- //
-
-store.dispatch(toggleTodo(1));
-store.dispatch(toggleTodo(2));
-
-console.log('toggled todos 1 and 2. state: ', store.getState());
+// store.dispatch(toggleTodo(2));
 
 // toggleFilter: ---------------- //
-
-store.dispatch(toggleFilter(FILTER_INCOMPLETE, INCOMPLETE));
-store.dispatch(toggleFilter(FILTER_ALL, ALL));
-store.dispatch(toggleFilter(FILTER_COMPLETED, COMPLETED));
-
-console.log('toggled filters. state: ', store.getState());
+// store.dispatch(toggleFilter(FILTER_COMPLETED, COMPLETED));
 
 // deleteTodo:  ---------------- //
-
-store.dispatch(deleteTodo(1));
-store.dispatch(deleteTodo(2));
-
-console.log('deleted todos 1 and 2. state: ', store.getState());
+// store.dispatch(deleteTodo(2));
 
 // clearTodos: ---------------- //
-
-store.dispatch(clearTodos());
-
-console.log('cleared all todos. state: ', store.getState());
-
-// Subscribe to the Redux store:
-
-function logState() {
-  console.log(store.getState());
-}
-
-store.subscribe(() => logState);
+// store.dispatch(clearTodos());
 
 
 // Tests:
