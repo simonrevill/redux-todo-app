@@ -1,8 +1,4 @@
-// Other imports to do:
-// constants, actions, reducers, store, utils
-
 import * as Utilities from './utils/utils.js';
-
 import { createTodo, createTodoHtml, addItemToList, generateId } from './libraries/todo-helpers.js';
 
 // Redux imports - remember to add combineReducers too later on:
@@ -139,17 +135,6 @@ Utilities.addListener(input, 'keyup', e => e.keyCode === 13 ? addTodoItem() : nu
 
 
 // -------- REDUX -------- //
-
-
-
-
-// Action Creator - make the following into separate action creators:
-// TBC...
-
-// const createAction = ({ type, todo, activeFilter }) => ({ type, todo, activeFilter });
-
-
-
 
 // Test Dispatch Actions to Redux Store:
 
