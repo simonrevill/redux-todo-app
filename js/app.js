@@ -154,8 +154,51 @@ Utilities.addListener(input, 'keyup', e => e.keyCode === 13 ? addTodoItem() : nu
 // clearTodos: ---------------- //
 // store.dispatch(clearTodos());
 
+const render = () => {
+  const currentState = store.getState();
+  var testArea = Utilities.select('.test-area');
 
-// Tests:
+  const listItems = currentState.todoReducer.todos;
+  if (testArea.innerHTML) {
+    Utilities.clearHtml(testArea);
+  }
+  listItems.map(item => {
+    const li = document.createElement('li');
+    li.innerText = `${item.text}`;
+    testArea.appendChild(li);
+  });
+};
+
+store.subscribe(render);
+
+// Test Dispatch Actions - addTodo. Copy and paste into Redux DevTools Dispatcher:
+
+// {
+//   type: 'ADD_TODO',
+//   todo: {
+//     id: 1,
+//     text: 'shababwab',
+//     completed: false
+//   }
+// }
+
+// {
+//   type: 'ADD_TODO',
+//   todo: {
+//     id: 2,
+//     text: 'beeeeea',
+//     completed: false
+//   }
+// }
+
+// {
+//   type: 'ADD_TODO',
+//   todo: {
+//     id: 3,
+//     text: 'kiiil',
+//     completed: false
+//   }
+// }
 
 // var elm = createElement("div");
 // addClass(elm, "test");
