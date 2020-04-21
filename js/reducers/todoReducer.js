@@ -26,10 +26,10 @@ const todoReducer = (state = initialState, action) => {
       return {
         todos: [
           ...state.todos.map(todo => {
-            if (todo.id === action.id) {
-              todo.completed = !todo.completed;
+            return {
+              ...todo,
+              completed: todo.id === action.id ? !todo.completed : todo.completed
             }
-            return todo;
           })
         ]
       };
