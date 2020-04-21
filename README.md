@@ -1,4 +1,4 @@
-![Redux Logo] https://github.com/simonrevill/redux-todo-app/blob/develop/img/redux_logo.png
+<img src='https://github.com/simonrevill/redux-todo-app/blob/develop/img/redux_logo.png' alt='Redux Logo' />
 # Redux To-do App
 
 A basic To-do app using vanilla JS and Redux.
