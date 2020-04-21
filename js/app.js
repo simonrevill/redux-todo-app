@@ -177,7 +177,11 @@ console.log('cleared all todos. state: ', store.getState());
 
 // Subscribe to the Redux store:
 
+function logState() {
+  console.log(store.getState());
+}
 
+store.subscribe(() => logState);
 
 
 // Tests:
