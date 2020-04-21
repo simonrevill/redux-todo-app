@@ -32,7 +32,7 @@ const store = createStore(
 // -------- CORE APP -------- //
 
 // Global Variables - hopefully we can get rid of some of these in time:
-const input = Utilities.select('.form-control');
+const input = Utilities.select('.js-todo-input');
 const addTodoBtn = Utilities.select('.js-add-todo');
 const todoList = Utilities.select('.js-todo-list');
 const clearTodosBtn = Utilities.select('.js-clear-btn');
